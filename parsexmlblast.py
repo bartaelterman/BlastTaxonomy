@@ -18,8 +18,14 @@ def printBlastResults(outputfile):
 		print ""
 
 def parseMetagenomeSeqNumber(queryDefLine):
+    """
+    By default, the script just returns the entire queryDefLine.
+    On certain occasions, you might want to parse certain parts of this line
+    such as:
     lineElements = queryDefLine.split("|")
     return lineElements[3]
+    """
+    return queryDefLine
 
 def parseGIandNameFromDefLine(defLine):
     lineElements = defLine.split("|")
