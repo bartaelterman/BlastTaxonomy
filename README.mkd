@@ -23,7 +23,7 @@ These scripts will help you to fetch taxonomic information from a blast result f
 
 - You might not be happy with the tsv file in between. It was a custom format I used for doing my own stuff so I suggest you change it if you want to. You only need it if you want to run `addTaxonomyToBlastOutput.py` as is. You could also use `addTaxonomyToBlastOutput.py` as a demonstration of how to use the classes in `gi_taxid_search.py` and `blasthittaxonomy.py` and write your own wrapper script.
 - Be sure to write your own email address in `blasthittaxonomy.py`. When I wrote these scripts, NCBI did not require you to do so but that could have changed by now. I think it is just a polite thing to do.
-- Make sure to get a copy of the `gi_taxid_nucl.dmp` file (I got it from NCBI's ftp servers) and refer to it in `blasthittaxonomy.py`.
+- Make sure to get a copy of the `gi_taxid_nucl.dmp` file (I got it from NCBI's ftp servers) and refer to it in `blasthittaxonomy.py`. By default, `blasthittaxonomy.py` will look for this file in the current working directory, so you can also put it (or a link to it) there.
 
 ## Run the stuff
 
