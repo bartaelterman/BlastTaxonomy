@@ -30,8 +30,15 @@ These scripts will help you to fetch taxonomic information from a blast result f
 - Run `parsexmlblast.py`: `./parsexmlblast.py <blastresultsfile>` Make sure the blastresultsfile is in xml.
 - Run `addTaxonomyToBlastOutput.py`: `./addTaxonomyToBlastOutput.py <blast output file>`
 
+## Cite this repository
+
+If you want to cite this repository, I recommend you use the following information:
+
+- Author name, as described in the [LICENSE](./LICENSE) file,
+- The url to this repository, or more precisely, to the version of this repository you used. See the tab [releases](https://github.com/bartaelterman/BlastTaxonomy/releases). For instance `https://github.com/bartaelterman/BlastTaxonomy/releases/tag/v0.2`.
+- You can use the name of this repository and/or its description as stated at the top of this repository's home page.
+
 ## Thanks
 
 Thank you for your interest. If you encouter any problems or if you have optimized some stuff, let me know by reporting an issue or send a pull request.
-
 
