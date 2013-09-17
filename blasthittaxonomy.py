@@ -21,9 +21,12 @@ import pickle
 
 class TaxonomyFetcher():
     def getKnownTaxa(self):
-	infile = open(self.knownTaxaFile)
-	self.knownTaxa = pickle.loads(infile.read())
-	infile.close()
+	try:
+	    infile = open(self.knownTaxaFile)
+	    self.knownTaxa = pickle.loads(infile.read())
+	    infile.close()
+	except IOError:
+	    self.knownTaxa = {}
 
     def __init__(self):
 	Entrez.email = "youremail@mail.com"
