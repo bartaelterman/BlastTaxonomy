@@ -31,8 +31,14 @@ def main():
 		    scientName = ""
 		else:
 		    division = taxonomy[0]["Division"]
-		    rank1 = taxonomy[0]["LineageEx"][0]["ScientificName"]
-		    rank2 = taxonomy[0]["LineageEx"][1]["ScientificName"]
+		    try:
+			rank1 = taxonomy[0]["LineageEx"][0]["ScientificName"]
+		    except:
+		        rank1 = ""
+		    try:
+			rank2 = taxonomy[0]["LineageEx"][1]["ScientificName"]
+		    except:
+		        rank2 = ""
 	print "\t".join([seqnr, ginr, hitname, evalue, bitscore, sim, score, division, scientName, rank1, rank2])
     taxfetcher.die()
 
